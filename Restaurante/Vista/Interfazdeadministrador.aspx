@@ -141,11 +141,7 @@
     </div>
 <!--End-Chart-box--> 
     <hr/>
-  <br />
-      <br />
-      <br />
-      <br />
-   
+
         <div class="widget-box">
     
         </div>

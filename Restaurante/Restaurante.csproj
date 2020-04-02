@@ -374,6 +374,8 @@
     <Folder Include="App_Data\" />
     <Folder Include="Controlador\" />
     <Folder Include="Modelo\" />
+    <Folder Include="Vista\NewFolder1\" />
+    <Folder Include="Vista\NewFolder2\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

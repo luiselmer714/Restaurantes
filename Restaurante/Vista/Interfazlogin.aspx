@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Interfazlogin.aspx.cs" Inherits="Restaurante.Vista.Interfazlogin" %>
+﻿<%@ Page Language="C#" EnableEventValidation="false" AutoEventWireup="true" CodeBehind="Interfazlogin.aspx.cs" Inherits="Restaurante.Vista.Interfazlogin" %>
 
 <!DOCTYPE html>
 
@@ -20,6 +20,11 @@
 
     <!-- Nuestro css-->
     <link rel="stylesheet" type="text/css" href="estilologin.css" >
+    <style>
+        h5 {
+            color:white
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -35,17 +40,20 @@
      <h5>Login </h5>
                     <div class="form-group" id="user-group">
                        
-                    <asp:TextBox ID="TextBox1" CssClass="form-control" placeholder="Nombre de usuario" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" CssClass="form-control" placeholder="Usuario" runat="server"></asp:TextBox>
 
                     </div>
+              
                     <div class="form-group" id="contrasena-group">
-                       
-                    <asp:TextBox ID="TextBox2" CssClass="form-control" placeholder="Nombre de usuario" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" CssClass="form-control" placeholder="Contraseña" runat="server"></asp:TextBox>
                     </div>
                  <i class="fas fa-sign-in-alt"></i> 
-                    <asp:Button ID="Button1"  CssClass="btn btn-primary"  runat="server" Text="Ingresar" />
+                    <asp:Button ID="Button1"  CssClass="btn btn-primary"  runat="server" Text="Siguiente" OnClick="Button1_Click" />
+                      <asp:Button ID="Button2"  CssClass="btn btn-primary" runat="server" Text="Iniciar" OnClick="Button2_Click" />
                 </form>
+              
                 <br />
+                <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
                 <br />
                 <div class="col-12 forgot">
                  

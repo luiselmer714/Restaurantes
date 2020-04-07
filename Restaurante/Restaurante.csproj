@@ -173,6 +173,8 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Vista\cssmenu\script.js" />
+    <Content Include="Vista\cssmenu\styles.css" />
     <Content Include="Vista\css\bootstrap-responsive.min.css" />
     <Content Include="Vista\css\bootstrap-wysihtml5.css" />
     <Content Include="Vista\css\bootstrap.min.css" />
@@ -192,6 +194,20 @@
     <Content Include="Vista\font-awesome\css\font-awesome.css" />
     <Content Include="Vista\font-awesome\fontawesome-webfont.svg" />
     <Content Include="Vista\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="Vista\Images\addnew.png" />
+    <Content Include="Vista\Images\cancel.png" />
+    <Content Include="Vista\Images\contact-bg.jpg" />
+    <Content Include="Vista\Images\delete.png" />
+    <Content Include="Vista\Images\edit.png" />
+    <Content Include="Vista\Images\home-bg.jpg" />
+    <Content Include="Vista\Images\save.png" />
+    <Content Include="Vista\Images\software-img.png" />
+    <Content Include="Vista\img\1065760100_0_195_1600_1061_1000x541_80_0_0_537f3f72e4a1fb1634927889e90e80a3.jpg" />
+    <Content Include="Vista\img\123.jpg" />
+    <Content Include="Vista\img\1234.jpg" />
+    <Content Include="Vista\img\12345.jpg" />
+    <Content Include="Vista\img\123456.jpg" />
+    <Content Include="Vista\img\1234567.jpg" />
     <Content Include="Vista\img\breadcrumb.png" />
     <Content Include="Vista\img\demo\av1.jpg" />
     <Content Include="Vista\img\demo\av2.jpg" />
@@ -202,6 +218,7 @@
     <Content Include="Vista\img\demo\demo-image2.jpg" />
     <Content Include="Vista\img\demo\demo-image3.jpg" />
     <Content Include="Vista\img\demo\envelope.png" />
+    <Content Include="Vista\img\descarga.jpg" />
     <Content Include="Vista\img\gallery\descarga.png" />
     <Content Include="Vista\img\gallery\images.jpg" />
     <Content Include="Vista\img\gallery\imgbox1.jpg" />
@@ -253,18 +270,28 @@
     <Content Include="Vista\img\icons\32\user.png" />
     <Content Include="Vista\img\icons\32\wallet.png" />
     <Content Include="Vista\img\icons\32\web.png" />
+    <Content Include="Vista\img\imagenres.jpg" />
+    <Content Include="Vista\img\images %281%29.jpg" />
     <Content Include="Vista\img\larrow.png" />
     <Content Include="Vista\img\line.png" />
     <Content Include="Vista\img\logo.png" />
     <Content Include="Vista\img\menu-active.png" />
+    <Content Include="Vista\img\pique miraflores.jpg" />
+    <Content Include="Vista\img\pollo-asado-la-parrilla-en-el-fondo-blanco-36445253.jpg" />
     <Content Include="Vista\img\rarrow.png" />
     <Content Include="Vista\img\saturation.png" />
     <Content Include="Vista\img\select2.png" />
     <Content Include="Vista\img\spinner.gif" />
     <Content Include="Vista\img\sprite.png" />
+    <Content Include="Vista\Interfazbuscar.aspx" />
+    <Content Include="Vista\Interfazclientes.aspx" />
     <Content Include="Vista\Interfazdeadministrador.aspx" />
     <Content Include="Vista\Interfazlogin.aspx" />
     <Content Include="Vista\estilologin.css" />
+    <Content Include="Vista\Interfazmenu.aspx" />
+    <Content Include="Vista\Interfazoferta.aspx" />
+    <Content Include="Vista\Interfazpedido.aspx" />
+    <Content Include="Vista\Interfazreserva.aspx" />
     <Content Include="Vista\js\bootstrap-colorpicker.js" />
     <Content Include="Vista\js\bootstrap-datepicker.js" />
     <Content Include="Vista\js\bootstrap-wysihtml5.js" />
@@ -302,6 +329,7 @@
     <Content Include="Vista\js\matrix.wizard.js" />
     <Content Include="Vista\js\select2.min.js" />
     <Content Include="Vista\js\wysihtml5-0.3.0.js" />
+    <Content Include="Vista\restaurantes.asmx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -323,6 +351,11 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controlador\menu.cs" />
+    <Compile Include="Controlador\Oferta.cs" />
+    <Compile Include="Controlador\Pedidos.cs" />
+    <Compile Include="Controlador\Reservas.cs" />
+    <Compile Include="Controlador\Restaurantes.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -355,6 +388,20 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Interfazbuscar.aspx.cs">
+      <DependentUpon>Interfazbuscar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Interfazbuscar.aspx.designer.cs">
+      <DependentUpon>Interfazbuscar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Interfazclientes.aspx.cs">
+      <DependentUpon>Interfazclientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Interfazclientes.aspx.designer.cs">
+      <DependentUpon>Interfazclientes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Interfazdeadministrador.aspx.cs">
       <DependentUpon>Interfazdeadministrador.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -369,13 +416,42 @@
     <Compile Include="Vista\Interfazlogin.aspx.designer.cs">
       <DependentUpon>Interfazlogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Interfazmenu.aspx.cs">
+      <DependentUpon>Interfazmenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Interfazmenu.aspx.designer.cs">
+      <DependentUpon>Interfazmenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Interfazoferta.aspx.cs">
+      <DependentUpon>Interfazoferta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Interfazoferta.aspx.designer.cs">
+      <DependentUpon>Interfazoferta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Interfazpedido.aspx.cs">
+      <DependentUpon>Interfazpedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Interfazpedido.aspx.designer.cs">
+      <DependentUpon>Interfazpedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Interfazreserva.aspx.cs">
+      <DependentUpon>Interfazreserva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Interfazreserva.aspx.designer.cs">
+      <DependentUpon>Interfazreserva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\restaurantes.asmx.cs">
+      <DependentUpon>restaurantes.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controlador\" />
     <Folder Include="Modelo\" />
-    <Folder Include="Vista\NewFolder1\" />
-    <Folder Include="Vista\NewFolder2\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -65,7 +65,7 @@ color:white
                         </tr>
                         <tr>
                             <td>
-                                <asp:Label ID="Label3" ForeColor="White" runat="server" Font-Size="10" Text='<%# Eval("Tipo") %>'></asp:Label>
+                                <asp:Label ID="Label3" ForeColor="White" runat="server" Font-Size="10" Text= '<%# Eval("Tipo") %>'></asp:Label>
                             </td>
                         </tr>    
                         <tr>

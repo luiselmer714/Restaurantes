@@ -27,7 +27,7 @@ namespace Restaurante.Vista
 
             comando.ExecuteNonQuery();
             Label1.Text = "Se registro el usuario";
-            Conexion.Close();
+            Conexion.Close();//hhdbfhh
         }
     }
 }

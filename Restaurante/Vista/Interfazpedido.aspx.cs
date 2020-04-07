@@ -51,7 +51,7 @@ namespace Restaurante.Vista
             //estamos insertandoi los datos de la farmacia ala tabla farmacia
             SqlConnection Conexion = new SqlConnection(con);
             Conexion.Open();
-            SqlCommand comando = new SqlCommand("insert into Pedidos( Tipo_pedido,Costototal,Direccion,Cantidad,id_cliente) values('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox5.Text +  "'  )", Conexion);
+            SqlCommand comando = new SqlCommand("insert into Pedidos( Tipo_pedido,Costototal,Direccion,Cantidad,id_cliente) values('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + "'  )", Conexion);
    
             comando.ExecuteNonQuery();
             Label1.Text = "Se registro el usuario";

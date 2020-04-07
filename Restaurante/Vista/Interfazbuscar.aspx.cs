@@ -39,7 +39,7 @@ namespace Restaurante.Vista
         protected void Button2_Click(object sender, EventArgs e)
         {
 
-            Label lblStatus = Repeater1.Items[0].FindControl("Label1") as Label;
+            Label lblStatus = Repeater1.Items[1].FindControl("Label1") as Label;
             Response.Redirect("Interfazpedido.aspx?id_restaurante="+lblStatus.Text);
           
 

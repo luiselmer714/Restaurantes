@@ -103,19 +103,12 @@ color:white
             <asp:TextBox ID="TextBox3" CssClass="form-control"  placeholder="Direccion" runat="server"></asp:TextBox>
             <br />
             <asp:TextBox ID="TextBox4" CssClass="form-control"  placeholder="Costo Total" runat="server"></asp:TextBox>
-            <br />
-            <asp:TextBox ID="TextBox5" CssClass="form-control"  placeholder="Nombre" runat="server"></asp:TextBox>
-             <br />
-            <asp:TextBox ID="TextBox6" CssClass="form-control"  placeholder="Ciudad" runat="server"></asp:TextBox>
-             <br />
+            <br />         
             <asp:TextBox ID="TextBox7" CssClass="form-control"  placeholder="Telefono" runat="server"></asp:TextBox>
              <br />
             <asp:TextBox ID="TextBox8" CssClass="form-control"  placeholder="Direccion" runat="server"></asp:TextBox>
-             <br />
-            <asp:TextBox ID="TextBox9" CssClass="form-control"  placeholder="Apellido" runat="server"></asp:TextBox>
-            <br />
-              <asp:TextBox ID="TextBox10" CssClass="form-control"  placeholder="Gmail" runat="server"></asp:TextBox>
-            <br />
+            
+            
             <asp:Button ID="Button1" CssClass="btn btn-secondary" runat="server" Text="Realizar Pedido" OnClick="Button1_Click" />
             <br />
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>

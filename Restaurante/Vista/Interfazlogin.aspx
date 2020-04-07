@@ -45,7 +45,7 @@
                     </div>
               
                     <div class="form-group" id="contrasena-group">
-                    <asp:TextBox ID="TextBox2" CssClass="form-control" placeholder="Contraseña" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2"   CssClass="form-control" placeholder="Contraseña" runat="server" TextMode="Password"></asp:TextBox>
                     </div>
                  <i class="fas fa-sign-in-alt"></i> 
                     <asp:Button ID="Button1"  CssClass="btn btn-primary"  runat="server" Text="Siguiente" OnClick="Button1_Click" />
@@ -53,7 +53,7 @@
                 </form>
               
                 <br />
-                <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                <asp:Label ID="Label1" runat="server" Font-Strikeout="True"></asp:Label>
                 <br />
                 <div class="col-12 forgot">
                  
